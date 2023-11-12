@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password = $_POST["password"];
 
     // Recuperar datos de la base de datos
-    $sql = "SELECT * FROM usuarios WHERE nombre='$username' AND password='$password'";
+    $sql = "SELECT * FROM usuarios WHERE numeroDocumento='$username' AND contrasena='$password'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "Soporte2020";
+$password = "";
 $dbname = "citasweb";  // El nombre de tu base de datos
 
 // Crear conexión

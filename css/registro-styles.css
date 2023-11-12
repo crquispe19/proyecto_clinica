@@ -105,3 +105,31 @@ nav a {
 .forgot-password a:hover {
     text-decoration: underline;
 }
+
+
+th, td {
+    padding: 18px;
+    text-align: right;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* Opcional, puede ser omitido en algunos casos */
+}
+
+select {
+    justify-self: end;
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border-radius: 0.25em;
+    padding: 10px;
+    font-size: 0.91rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+/* Estilo para el option seleccionado */
+select option:checked {
+    background-color: #3498db; /* Color de fondo */
+    color: #fff; /* Color del texto */
+}
