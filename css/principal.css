@@ -1,0 +1,373 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos de encabezado y navegación */
+header {
+    background-color: #ffffff;
+    padding: 20px 40px; /* Aumenta el espaciado horizontal */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+}
+
+.logo img {
+    max-width: 200px; /* Ajusta el ancho máximo del logo */
+}
+
+/* Estilos para el menú */
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2e92da;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #2980b9;
+}
+
+/* Estilos para el botón "Reservar CITA" */
+
+.reservar-btn {
+    display: inline-block;
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; /* Eliminar la subrayado predeterminado de los enlaces */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.reservar-btn:hover {
+    background-color: #3498db;
+}
+
+
+/* Estilos del contenedor */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos de secciones */
+section {
+    padding: 40px 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de encabezados de secciones */
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de contenido de secciones */
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Estilos de imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos de pie de página */
+footer {
+    background-color: #0d47a1;
+    color: #bbdefb;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/* Estilos de especialidades */
+.especialidades {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Cambia a 2 columnas y ajusta el ancho mínimo y máximo */
+    gap: 40px;
+    max-width: 1300px; /* Aumenta el ancho máximo para permitir rectángulos más anchos */
+    margin: 0 auto;
+}
+
+/* Estilos de cada especialidad (rectángulos) */
+.especialidad {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    min-width: 280px; /* Ancho mínimo para cada especialidad */
+    max-width: 600px; /* Ancho máximo para cada especialidad */
+    height: 250px; /* Altura de cada especialidad */
+}
+
+
+.especialidad h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.especialidad p {
+    font-size: 16px;
+    color: #555;
+}
+
+.especialidad img {
+    width: 200px;
+    height:100px;
+}
+
+/* Estilos de la sección Nosotros */
+#nosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nosotros2 {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    max-width: 800px;
+}
+
+#nosotros h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.nosotros-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.nosotros-text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.nosotros-image {
+    flex: 1;
+    text-align: center;
+}
+
+.nosotros-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos de Misión y Visión */
+.nosotros-mission-vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mission,
+.vision {
+    flex-basis: calc(50% - 10px); /* Divide el espacio en dos, restando el margen entre ellos */
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 348px; 
+}
+
+.mission h4,
+.vision h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.mission p,
+.vision p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Estilos para la sección de testimonios */
+.testimonios-section {
+    padding: 40px 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonios-container {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    /*justify-content: space-between; /* Distribuir los cuadros de testimonios de manera uniforme */
+    gap: 20px; /* Espacio entre los cuadros */
+}
+
+.testimonio {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+}
+
+/* Estilos para el contenido de los testimonios */
+.testimonio h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.testimonio p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilos de la sección de contacto */
+#contacto {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#contacto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la sección de contacto - Contenedor principal */
+.contacto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Estilos de la sección de contacto - Contenido (imagen y formulario) */
+.contacto-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%; 
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.contacto-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contacto-form {
+    background-color: #f0f0f0;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.contacto-form h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* Estilos para los campos del formulario */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px; /* Espacio entre label e input */
+    color: #333;
+    flex-basis: 30%; /* Ancho del label */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+input[type="date"] {
+    flex-grow: 1; /* El input ocupa todo el espacio restante */
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    min-width: 0; /* Restablece el ancho mínimo para que pueda contraerse */
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin: 0 auto; /* Centrar horizontalmente el botón */
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}

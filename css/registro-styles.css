@@ -1,0 +1,107 @@
+/* Estilos de encabezado y navegación*/
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3498db;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilos del contenido principal*/
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 0;
+}
+
+/* Estilos de Registro de Usuario */
+.registro-container {
+    flex: 1;
+    margin-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.registro-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.registro-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registro-form .input-container {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.registro-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.registro-form input[type="text"],
+.registro-form input[type="email"],
+.registro-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.registro-form button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.registro-form button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
